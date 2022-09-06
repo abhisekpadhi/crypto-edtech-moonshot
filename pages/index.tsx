@@ -27,10 +27,31 @@ export type PopupOptions = {
     onPageView?: (page: number) => void;
     onSubmit?: (payload: any) => void;
 };
+
+export function getWidth() {
+    return Math.max(
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.documentElement.clientWidth
+    );
+}
+
+export function getHeight() {
+    return Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight,
+        document.documentElement.clientHeight
+    );
+}
+
 export const openForm = () => {
     const opts: PopupOptions = {
         layout: 'modal', // Open as a centered modal
-        width: 460, // Set the width of the modal
+        width: 0.8 * getWidth(), // Set the width of the modal
         autoClose: 5000, // Close the popup 5 seconds after form was submitted (in ms)
         emoji: {
             text: '🚀',
