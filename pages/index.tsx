@@ -46,8 +46,8 @@ const Home: NextPage = () => {
         <div className={styles.container} style={{padding: 0}}>
             <Script async src="https://tally.so/widgets/embed.js" />
             <Head>
-                <title>Droppr</title>
-                <meta name="description" content="Droppr - crypto edtech app" />
+                <title>Join Club</title>
+                <meta name="description" content="JoinClub - crypto edtech app" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
                 <Image src={require('../public/img/student/4.png')} alt={''} style={{ width: '100%'}} />
                 <Image src={require('../public/img/student/5.png')} alt={''} style={{ width: '100%'}} />
                 <Image src={require('../public/img/student/6.png')} alt={''} style={{ width: '100%'}} />
-                <Image src={require('../public/img/student/7.png')} alt={''} style={{ width: '100%'}} />
+                <Image onClick={openForm} src={require('../public/img/student/7.png')} alt={''} style={{ width: '100%'}} />
             </main>
     </div>
 )

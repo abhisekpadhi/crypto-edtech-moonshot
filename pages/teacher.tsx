@@ -23,8 +23,8 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container} style={{padding: 0}}>
       <Head>
-        <title>Droppr for Teacher</title>
-        <meta name="description" content="Droppr - crypto edtech app" />
+        <title>JoinClub for Teacher</title>
+        <meta name="description" content="JoinClub - crypto edtech app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
         <Image onClick={openForm} src={require('../public/img/teacher/1.png')} alt={''} style={{ width: '100%'}} />
         <Image src={require('../public/img/teacher/2.png')} alt={''} style={{ width: '100%'}} />
         <Image src={require('../public/img/teacher/3.png')} alt={''} style={{ width: '100%'}} />
-        <Image src={require('../public/img/teacher/4.png')} alt={''} style={{ width: '100%'}} />
+        <Image onClick={openForm} src={require('../public/img/teacher/4.png')} alt={''} style={{ width: '100%'}} />
       </main>
     </div>
   )
